@@ -45,4 +45,4 @@ for i in line['PMq']:
 등급.columns = ['등급']
 
 line = pd.concat([line, 등급], axis=1)
-st.write(line)
+st.dataframe(line)
