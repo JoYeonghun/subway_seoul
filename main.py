@@ -29,7 +29,7 @@ st.title('서울 지하철 미세먼지 알리미')
 
 option = st.selectbox(
     '몇호선이 궁금하세요?',
-    ('1', '2', '3'))
+    ('1', '2', '3', '4', '5', '6', '7', '8'))
 
 st.write('You selected:', option)
 
