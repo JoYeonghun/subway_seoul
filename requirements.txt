@@ -3,4 +3,4 @@ requests
 pandas
 bs4
 xml_to_dict
-xml
+lxml
