@@ -3,3 +3,5 @@ requests
 pandas
 bs4
 BeautifulSoup
+xml_to_dict
+XMLtoDict
