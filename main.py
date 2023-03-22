@@ -49,3 +49,9 @@ line = pd.concat([line, 등급], axis=1)
 
 st.title('서울 지하철 미세먼지 알리미')
 st.dataframe(line)
+
+option = st.selectbox(
+    'How would you like to be contacted?',
+    ('Email', 'Home phone', 'Mobile phone'))
+
+st.write('You selected:', option)
