@@ -52,6 +52,6 @@ st.dataframe(line)
 
 option = st.selectbox(
     '몇호선이 궁금하세요?',
-    ('1호선', '2호선', '3'))
+    ('1호선', '2호선', '3호선'))
 
 st.write('You selected:', option)
