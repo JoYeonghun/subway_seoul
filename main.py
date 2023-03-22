@@ -46,4 +46,6 @@ for i in line['PMq']:
 등급.columns = ['등급']
 
 line = pd.concat([line, 등급], axis=1)
+
+st.title('서울 지하철 미세먼지 알리미')
 st.dataframe(line)
