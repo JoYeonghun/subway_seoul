@@ -11,9 +11,9 @@ endnum = 1000
 url = f'http://openapi.seoul.go.kr:8088/{apikey}/xml/airPolutionInfo/{startnum}/{endnum}/'
 
 params = {
-            "LINE" : 'LINE'
-            ,"AREA_NM" : 'AREA_NM'
-            ,"CHECKDATE" : "CHECKDATE"
+            "LINE" : '호선'
+            ,"AREA_NM" : '역'
+            ,"CHECKDATE" : "업데이트 시간"
             ,"PMq" : "PMq"
           }
 
