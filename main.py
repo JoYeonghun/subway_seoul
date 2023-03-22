@@ -51,7 +51,7 @@ st.title('서울 지하철 미세먼지 알리미')
 st.dataframe(line)
 
 option = st.selectbox(
-    'How would you like to be contacted?',
-    ('Email', 'Home phone', 'Mobile phone'))
+    '몇호선이 궁금하세요?',
+    ('1호선', '2호선', '3'))
 
 st.write('You selected:', option)
