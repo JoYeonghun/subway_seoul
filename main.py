@@ -25,7 +25,15 @@ xd = XMLtoDict()
 subway = pd.DataFrame(xd.parse(response.content)['airPolutionInfo']['row'])
 subway['PMq'] = subway['PMq'].astype('float')
 
-line = subway[subway['LINE'] == '1']  # 지하철 호선 설정
+st.title('서울 지하철 미세먼지 알리미')
+
+option = st.selectbox(
+    '몇호선이 궁금하세요?',
+    ('1', '2', '3'))
+
+st.write('You selected:', option)
+
+line = subway[subway['LINE'] == option]  # 지하철 호선 설정
 line.reset_index(inplace=True)
 등급 = []
 
@@ -47,11 +55,4 @@ for i in line['PMq']:
 
 line = pd.concat([line, 등급], axis=1)
 
-st.title('서울 지하철 미세먼지 알리미')
 st.dataframe(line)
-
-option = st.selectbox(
-    '몇호선이 궁금하세요?',
-    ('1호선', '2호선', '3호선'))
-
-st.write('You selected:', option)
