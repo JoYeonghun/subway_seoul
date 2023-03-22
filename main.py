@@ -31,7 +31,7 @@ option = st.selectbox(
     '몇호선이 궁금하세요?',
     ('1', '2', '3', '4', '5', '6', '7', '8'))
 
-st.write(option,'호선')
+st.write(option, '호선')
 
 line = subway[subway['LINE'] == option]  # 지하철 호선 설정
 line.reset_index(inplace=True)
